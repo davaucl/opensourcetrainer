@@ -1,6 +1,6 @@
 # Trainer Open Source
 
-A web application to control smart bike trainers using Web Bluetooth. Currently supports the Wahoo KICKR series.
+A web application to control smart bike trainers using Web Bluetooth. Currently supports the Wahoo KICKR v5.
 
 ## Features
 - Connect to KICKR trainers via Bluetooth
@@ -47,10 +47,6 @@ This project uses the Fitness Machine Service (FTMS) Bluetooth profile to commun
 #### Indoor Bike Data (0x2AD2)
 Provides real-time data from the trainer including:
 - Current power output
-- Speed
-- Cadence
-
-The data format uses a flags field to indicate which data is present:
 
 #### Fitness Machine Control Point (0x2AD9)
 Used to control the trainer. Key commands:
@@ -61,10 +57,6 @@ Used to control the trainer. Key commands:
 
 Response Format:
 [0x80, OpCode, Result]
-
-Result:
-0x01: Success
-0x00: Failed
 
 ### References
 
